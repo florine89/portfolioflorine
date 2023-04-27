@@ -13,12 +13,12 @@ function Home() {
       <main className=' bg-slate-100'>
         <section className='min-h-screen'>
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className='text-xl font-burtons'>Florine's Portfolio</h1>
+            <h1 className='text-xl font-burtons ml-7'>Florine's Portfolio</h1>
             <ul className='flex items-center'>
               <li>
                 <BsFillCloudMoonFill className='cursor-pointer text-3xl' />
               </li>
-              <li><a href="#" className='bg-gradient-to-r from-pink-200 to-pink-800 text-white px-4 py-2 rounded-lg ml-8'>Resume</a></li>
+              <li className='hover:scale-125 ease-in duration-300 mr-10'><a href="#" className='bg-gradient-to-r from-pink-200 to-pink-800 text-white px-4 py-2 rounded-lg ml-8 scale-50 '>Resume</a></li>
             </ul>
           </nav>
           <div className='text-center p-10 py-10'>
