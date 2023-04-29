@@ -5,6 +5,7 @@ import me from "../../public/portfoliome.jpg"
 import Navbar from '../../components/Navbar';
 
 function Home() {
+  
   return (
     <div>
       <Head>
@@ -13,10 +14,10 @@ function Home() {
       </Head>
       <main className=''>  
       
-      <Navbar />
+     <Navbar /> 
             
-          <div className='text-center p-10 py-10'>
-            <h2 className='text-5xl py-2 text-pink-900 font-medium '>Florine Ferreira</h2>
+         <div className='text-center p-10'>
+            <h2 className='text-5xl py-2 mt-20 text-pink-900 font-medium '>Florine Ferreira</h2>
             <h3 className='text-2xl py-2'>Developer Fullstack Javascript</h3>
             <p className='text-md py-5 leading-8 text-gray-800'>Hello there ! </p>
             <p> Welcome to my portfolio</p>
