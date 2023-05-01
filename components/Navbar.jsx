@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { BsFillCloudMoonFill, BsLinkedin, BsGithub, BsFillEnvelopeAtFill } from 'react-icons/bs';
@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         //création de ma nav barre fullscreen
-        <div className='fixed w-full h-20 shadow-xl z-[100]'>
+        <div className='fixed display-block w-full h-20 shadow-xl z-[100] z-index: 50'>
             <nav className="flex justify-between items-center w-full px-2 2xl:px-16 ">
                 <ul className='mt-3 hidden md:flex'>
                     <Link href='/'>
@@ -45,7 +45,7 @@ const Navbar = () => {
                     </Link>
                 </ul>
 
-               <div onClick={handleNav} className='mt-3 cursor-pointer md:hidden'>
+                <div onClick={handleNav} className='mt-3 cursor-pointer md:hidden'>
                     <AiOutlineMenu size={25} />
                 </div>
                 <ul className='mt-3 flex items-center'>
@@ -55,10 +55,13 @@ const Navbar = () => {
                     <li className='hover:scale-125 ease-in duration-300 mr-10'><a href="#" className='bg-gradient-to-r from-pink-200 to-pink-800 text-white px-4 py-2 rounded-lg ml-8 scale-50 '>Resume</a></li>
                 </ul>
             </nav>
-{/* Création de ma navbar under 750px avec mon menu burger */}
-            <div className={nav ? 'fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
+            {/* Création de ma navbar under 750px avec mon menu burger */}
+            <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
 
-                <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500' : 'fixed left-[-100%] top-0 ease-in duration-500'}>
+                <div className={nav ? 'md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+                                    : 'fixed left-[-100%] top-0 ease-in duration-500'
+                     }
+                >
 
                     <div className='flex w-full items-center justify-between'>
                         <div className='font-burtons text-pink-700'>
@@ -106,7 +109,7 @@ const Navbar = () => {
                         </div>
 
                         <div className='flex justify-center m-5 rounded-full shadow-lg cursor-pointer'>
-                            <BsFillEnvelopeAtFill size={20}/>
+                            <BsFillEnvelopeAtFill size={20} />
                         </div>
 
                     </div>
