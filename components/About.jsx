@@ -11,12 +11,16 @@ const About = () => {
                     <h2 className='py-4'>Who I Am</h2>
                     <p className='py-2 text-gray-600'>I have spent the last 10 years in retail working as a manager and trainer, specifically in the field of aesthetics and cosmetics. I enjoyed and learned a lot
                         during those years.
-                        In my work I am always focused on my goals, motivated and excited about learning new things.
                     </p>
                     <p className='py-2 text-gray-600'>
                         In fact, I have been always intrigued by new technologies, the web development, and the endless possibilities they offer.
                         Properly, I chosed to make a change in my professionnal carreer and started studying the web development at the school ' O'clock ', with HTML, CSS and Javascript.
                         Today, I keep going on this positiv energy to expand my skills and explore new technologies with personnal projects.
+                    </p>
+                    <p className='py-2 text-gray-600'> 
+                    I'm super motivated, focused on my goals and always wiling to learn. I'm ready to build positive relationships, use my skills 
+                    and experiences on several upcoming projects. 
+                    Let's work together ! 
                     </p>
                     <p className='py-2 text-gray-600 underline cursor-pointer'>Check out some of my latest projects</p>
                 </div>
