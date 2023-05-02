@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 import { BsLinkedin, BsGithub, BsFillArrowDownCircleFill } from 'react-icons/bs';
-import me from "../public/portfoliome.jpg";
+import me from "../public/assets/portfoliome.jpg";
 
 const Main = () => {
     return (
