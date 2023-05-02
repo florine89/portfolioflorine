@@ -23,14 +23,11 @@ const About = () => {
                     Let's work together ! 
                     </p>
                     <p className='py-2 text-gray-600 underline cursor-pointer'>Check out some of my latest projects</p>
-                </div>
-                <div className='w-full rounded-xl shadow-xl opacity-75 flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-                <Image src={bureau} alt='/' className='rounded-xl' />
-                </div>
+                </div>       
+                <div className='w-full h-auto m-auto shadow-xl rounded-xl p-4 hover:scale-105 ease-in duration-300'>
+                <Image src={bureau} alt='/' className='rounded-xl opacity-75' />
+                </div>                      
             </div>
-           
-            
-           
         </div>
     )
 }

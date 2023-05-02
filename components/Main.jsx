@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import { BsLinkedin, BsGithub, BsFillArrowDownCircleFill } from 'react-icons/bs';
+import { BsLinkedin, BsGithub, BsFillArrowDownCircleFill, BsFillEnvelopeAtFill } from 'react-icons/bs';
 import me from "../public/assets/portfoliome.jpg";
 
 const Main = () => {
@@ -16,9 +16,11 @@ const Main = () => {
                         <BsFillArrowDownCircleFill className='cursor-pointer' />
                     </a>
                 </div>
-                <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-                    <BsGithub />
-                    <BsLinkedin />
+                <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 '>
+                    <BsGithub className='cursor-pointer hover:scale-110 ease-in duration-300'/>
+                    <BsLinkedin className='cursor-pointer hover:scale-110 ease-in duration-300' />
+                    <BsFillEnvelopeAtFill className='cursor-pointer hover:scale-110 ease-in duration-300' />
+
                 </div>
                 <div className='flex justify-center mt-20'>
                     <Image className='w-64  rounded-full brightness-90' src={me} />
