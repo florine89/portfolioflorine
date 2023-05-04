@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
+  html {
+    @apply scroll-smooth
+  }
+
   body {
-    @apply bg-[#ecf0f3]
+    @apply bg-[#ecf0f3] tracking-wide
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -14,9 +19,4 @@
   h1 {
     @apply text-4xl sm:text-5xl md:text-6xl
   }
-}
-
-@font-face {
-  font-family: "burtons";
-  src: url("/public/Burtons.otf");
 }

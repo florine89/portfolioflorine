@@ -5,7 +5,7 @@ import me from "../public/assets/portfoliome.jpg";
 
 const Main = () => {
     return (
-        <div className=''>
+        <div id='home' className='w-full h-screen text-center'>
                 <div className='text-center p-10'>
                     <h2 className='text-5xl py-2 mt-20 text-pink-900 font-medium '>Florine Ferreira</h2>
                     <h3 className='text-2xl py-2'>Developer Fullstack Javascript</h3>
