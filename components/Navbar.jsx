@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className={Shadow ? 'fixed display-block w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
             <nav className="flex justify-between items-center w-full px-2 2xl:px-16 ">
                 <ul className='mt-3 hidden md:flex'>
-                    <Link href='/' scroll={false}>
+                    <Link href='/#home' scroll={false}>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
                             Home
                         </li>
@@ -91,7 +91,7 @@ const Navbar = () => {
 
                     <div py-4 flex flex-col>
                         <ul className='uppercase'>
-                            <Link href='/' scroll={false}>
+                            <Link href='/#home' scroll={false}>
                                 <li onClick={()=> setNav(false)} className='py-4 text-sm'>Home</li>
                             </Link>
                             <Link href='/#about' scroll={false}>

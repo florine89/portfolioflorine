@@ -12,9 +12,6 @@ const Main = () => {
                     <h4 className='text-md py-5 leading-8 text-gray-800'>Hello there ! Welcome to my portfolio !</h4>
                     <p>I am a full-stack developer based in Paris. </p>
                     <p>Visit my profile and stay connect with me</p>
-                    <a href="#projets" className='text-5xl flex justify-center m-14 animate-bounce'>
-                        <BsFillArrowDownCircleFill className='cursor-pointer' />
-                    </a>
                 </div>
                 <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 '>
                     <BsGithub className='cursor-pointer hover:scale-110 ease-in duration-300'/>
@@ -23,7 +20,7 @@ const Main = () => {
 
                 </div>
                 <div className='flex justify-center mt-20'>
-                    <Image className='w-64  rounded-full brightness-90' src={me} />
+                    <Image className='w-64  rounded-full brightness-90' src={me} alt='me' />
                 </div>
         </div>
     )
