@@ -20,7 +20,7 @@ import Vscode from '../public/assets/vscode.png';
 
 const Skills = () => {
     return (
-        <div id='skills' className='w-full lg:h-screen p-2'>
+        <div id='skills' className='w-full pt-24 mb-64 lg:h-screen p-2'>
             <div className='max-w-[1240px] mx-auto flex-col="+true" justify-center h-full'>
                 <p className='text-xl tracking-widest uppercase text-pink-700'>Skills</p>
                 <h2 className='py-5 mb-6 text-gray-600'>What I can Do</h2>

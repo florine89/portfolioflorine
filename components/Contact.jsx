@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Contact = () => {
     return (
-        <div id="contact" className='w-full lg:h-screen'>
+        <div id="contact" className='w-full pt-14 lg:h-screen'>
             <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
                 <p className='text-xl tracking-widest uppercase text-pink-700'>Contact</p>
                 <h2 className='py-4'>Get In Touch</h2>
@@ -41,10 +41,10 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center py-16'>
+                <div className='flex justify-center py-16 mt-20'>
                     <Link href=''>
                     <div className='rounded-full shadow-xl cursor-pointer hover:scale-110 ease-in duration-300'>
-<BsChevronDoubleUp className='text-4xl text-gray-400' />
+<BsChevronDoubleUp className='text-5xl text-gray-400' />
                     </div>
                     </Link>
                 </div>

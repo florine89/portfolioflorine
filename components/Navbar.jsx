@@ -2,12 +2,23 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { BsFillCloudMoonFill, BsLinkedin, BsGithub, BsFillEnvelopeAtFill } from 'react-icons/bs';
+import { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme, GlobalStyles } from "../src/pages/ThemeConfig" ;
 
 
 const Navbar = () => {
 
-    const [nav, setNav] = useState(false)
-    const [Shadow, SetShadow] = useState(false)
+    const [nav, setNav] = useState(false);
+    const [Shadow, SetShadow] = useState(false);
+    const [navBg, setNavBg] = useState('#ecf0f3');
+    const [linkColor, setLinkColor]= useState('#1f2937');
+    
+    //const changement de theme
+    const [theme, setTheme] = useState("light") 
+   //fonction toggletheme pour allé dans mon bon composant
+    const toggleTheme = () => {
+        theme == 'light' ? setTheme('dark') : setTheme('light')
+    }
 
     const handleNav = () => {
         setNav(!nav)
@@ -26,11 +37,17 @@ const Navbar = () => {
 
     }, [])
 
+
+
     return (
         //création de ma nav barre fullscreen
-        <div className={Shadow ? 'fixed display-block w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
+        <ThemeProvider theme={theme == 'light' ? lightTheme : darkTheme}>
+        <GlobalStyles />
+           
+        <div style={{backgroundColor: `${navBg}`}}
+        className={Shadow ? 'fixed display-block w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
             <nav className="flex justify-between items-center w-full px-2 2xl:px-16 ">
-                <ul className='mt-3 hidden md:flex'>
+                <ul style={{color: `${linkColor}`}} className='mt-3 hidden md:flex'>
                     <Link href='/#home' scroll={false}>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
                             Home
@@ -63,7 +80,9 @@ const Navbar = () => {
                 </div>
                 <ul className='mt-3 flex items-center'>
                     <li>
-                        <BsFillCloudMoonFill className='cursor-pointer text-3xl' />
+                        <BsFillCloudMoonFill onClick={toggleTheme}
+                        className='cursor-pointer text-3xl' 
+                         />
                     </li>
                     <li className='hover:scale-125 ease-in duration-300 mr-10'><a href="#" className='bg-gradient-to-r from-pink-200 to-pink-800 text-white px-4 py-2 rounded-lg ml-8 scale-50 '>Resume</a></li>
                 </ul>
@@ -77,7 +96,7 @@ const Navbar = () => {
                 >
 
                     <div className='flex w-full items-center justify-between'>
-                        <div className=' text-pink-700'>
+                        <div id='name' className=' text-pink-700'>
                             Florine's Portfolio
                         </div>
                         <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
@@ -129,6 +148,8 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
+        </ThemeProvider>
+      
     )
 }
 
