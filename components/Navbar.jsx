@@ -44,7 +44,7 @@ const Navbar = () => {
         <ThemeProvider theme={theme == 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
            
-        <div style={{backgroundColor: `${navBg}`}}
+        <div style={theme === 'light' ? {backgroundColor: `${navBg}`} : {backgroundColor : 'gray'}}
         className={Shadow ? 'fixed display-block w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
             <nav className="flex justify-between items-center w-full px-2 2xl:px-16 ">
                 <ul style={{color: `${linkColor}`}} className='mt-3 hidden md:flex'>
@@ -84,13 +84,16 @@ const Navbar = () => {
                         className='cursor-pointer text-3xl' 
                          />
                     </li>
-                    <li className='hover:scale-125 ease-in duration-300 mr-10'><a href="#" className='bg-gradient-to-r from-pink-200 to-pink-800 text-white px-4 py-2 rounded-lg ml-8 scale-50 '>Resume</a></li>
+                    <li className='hover:scale-125 ease-in duration-300 mr-10'><a href="/"
+                    className='bg-gradient-to-r from-pink-200 to-pink-800 text-white px-4 py-2 rounded-lg ml-8 scale-50 '>Resume</a></li>
                 </ul>
             </nav>
             {/* Création de ma navbar under 750px avec mon menu burger */}
-            <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
+            <div 
+            className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
 
-                <div className={nav ? 'md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+                <div style={theme === 'light' ? {backgroundColor: `${navBg}`} : {backgroundColor : 'gray'}}
+                className={nav ? 'md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
                                     : 'fixed left-[-100%] top-0 ease-in duration-500'
                      }
                 >
