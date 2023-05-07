@@ -14,9 +14,15 @@ const Main = () => {
                     <p>Visit my profile and stay connect with me</p>
                 </div>
                 <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 '>
+                <a href='https://github.com/florine89'>
                     <BsGithub className='cursor-pointer hover:scale-110 ease-in duration-300'/>
+                    </a>
+                    <a href='https://www.linkedin.com/in/florineferreira'>
                     <BsLinkedin className='cursor-pointer hover:scale-110 ease-in duration-300' />
+                    </a>
+                    <a href='mailto:ferreiraflorine@gmail.com?Envoyer un mail'>
                     <BsFillEnvelopeAtFill className='cursor-pointer hover:scale-110 ease-in duration-300' />
+                    </a>
 
                 </div>
                 <div className='flex justify-center mt-20'>
