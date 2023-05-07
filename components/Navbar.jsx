@@ -20,6 +20,7 @@ const Navbar = () => {
         theme == 'light' ? setTheme('dark') : setTheme('light')
     }
 
+
     const handleNav = () => {
         setNav(!nav)
         console.log(setNav)
@@ -84,7 +85,9 @@ const Navbar = () => {
                         className='cursor-pointer text-3xl' 
                          />
                     </li>
-                    <li className='hover:scale-125 ease-in duration-300 mr-10'><a href="/"
+                    <li className='hover:scale-125 ease-in duration-300 mr-10'>
+                        <a href="/assets/flo-resume.pdf"
+                        target='_blank'
                     className='bg-gradient-to-r from-pink-200 to-pink-800 text-white px-4 py-2 rounded-lg ml-8 scale-50 '>Resume</a></li>
                 </ul>
             </nav>
