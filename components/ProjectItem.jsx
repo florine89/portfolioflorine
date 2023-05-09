@@ -9,14 +9,18 @@ const ProjectItem = ({title, backgroundImg, description,technologies, projectUrl
         <Image width={300}  src={backgroundImg} alt="background" className='rounded-xl group-hover:opacity-10' />
         <div className='hidden group-hover:block absolute bottom-[50%] left-[50%] translate-x-[-50%] translate-y-[50%]'>
             <h3 className=' text-lg text-white tracking-wider text-center'>{title}</h3>
-            <h4  className=' text-sm text-white tracking-wider text-center'>{technologies}</h4>
+            <h4  className=' text-sm text-gray-600 tracking-wider text-center'>{technologies}</h4>
             <p className='pb-4 pt-2 text-white text-center text-sm'>{description}</p>      
-            <Link href={projectUrl}>
+            {projectUrl && (
+                <Link href={projectUrl} target='_blank'>
                 <p className=' text-center my-1 rounded-lg bg-white text-pink-700 font-bold text-base cursor-pointer'>View Project</p>
-            </Link>
-            <Link href={github}>
+            </Link>)
+}
+            {github && 
+            (<Link href={github} target='_blank'>
                 <p className='text-center my-1 rounded-lg bg-white text-pink-700 font-bold text-base cursor-pointer '>View on Github</p>
-            </Link>
+            </Link> )
+}
         </div>
     </div>
     )

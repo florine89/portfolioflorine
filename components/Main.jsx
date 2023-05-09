@@ -11,7 +11,7 @@ const Main = () => {
                 <h3 className='text-2xl py-2'>Developer Fullstack Javascript</h3>
                 <h4 className='text-md py-5 leading-8 text-gray-800'>Hello there ! Welcome to my portfolio !</h4>
                 <p>I am a full-stack developer based in Paris. </p>
-                <p>Visit my profile and stay connect with me</p>
+                <p>Visit my profile and stay connect with me !</p>
             </div>
             <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 '>
                 <a href='https://github.com/florine89'>

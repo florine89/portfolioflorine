@@ -1,9 +1,11 @@
 import React from 'react';
 import ProjectItem from './ProjectItem';
-import calculatechild from '../public/assets/projects/calculatricechild.png';
-import fitwork from '../public/assets/projects/fitworkw.jpg';
-import gamehub from '../public/assets/projects/gamehubw.jpg';
-import github from '../public/assets/projects/github.png';
+import calculatechild from '../public/assets/projects/calculatricechildpic.jpg';
+import fitwork from '../public/assets/projects/fitworkpic.jpg';
+import gamehub from '../public/assets/projects/gamehubpic.jpg';
+import github from '../public/assets/projects/githubpic.png';
+import portfolio from '../public/assets/projects/portfoliopic.png';
+import converter from '../public/assets/projects/converterpic.png';
 
 
 
@@ -21,24 +23,35 @@ const Projects = () => {
                   and permit to follow a worker during his day at work."
                   projectUrl="https://fitwork-app.netlify.app/" 
                   github="https://github.com/florine89/fitwork-front" />   
-                  <ProjectItem title='FitWork'
+                  <ProjectItem title='Gamehub'
                   backgroundImg={gamehub}
                   technologies="Reactjs, Nodejs, express, PostgreSQL."
-                  description=""
-                  projectUrl="https://fitwork-app.netlify.app/" 
-                  github="https://github.com/florine89/fitwork-front" /> 
-                  <ProjectItem title='FitWork'
+                  description="Game application !"
+                  github="https://github.com/florine89/plateforme-games" /> 
+                  <ProjectItem title='Github search engine'
                   backgroundImg={github}
-                  technologies="Reactjs, Nodejs, express, PostgreSQL."
-                  description=""
-                  projectUrl="https://fitwork-app.netlify.app/" 
-                  github="https://github.com/florine89/fitwork-front" /> 
-                  <ProjectItem title='Child Calculate'
+                  technologies="Reactjs, Nodejs, express, PostgreSQL, Axios, Semantic-UI."
+                  description="Look for anything you want on github search engine !"
+                  projectUrl="https://github-moteur-de-recherche.netlify.app/" 
+                  github="https://github.com/florine89/Moteur-recherche-github" /> 
+                  <ProjectItem title='Child calculate'
                   backgroundImg={calculatechild}
                   technologies="Jquery"
                   description="Calculate for kids to play around. On the menu, find educational french popular websites for kids."
                   projectUrl="https://kidsplaycalculate.netlify.app/" 
                   github="https://github.com/florine89/child-calculate" />  
+                  <ProjectItem title='Currency conversion calculator'
+                  backgroundImg={converter}
+                  technologies="Reactjs, Sass"
+                  description="Application made during my course to convert money from one currency to another."
+                  projectUrl="https://converter2023.netlify.app/" 
+                  github="https://github.com/florine89/converter" />  
+                     <ProjectItem title='My portfolio'
+                  backgroundImg={portfolio}
+                  technologies="Nextjs, TailwindCSS"
+                  description="Mon portfolio sur lequel vous naviguez actuellement !"
+                  github="https://github.com/florine89/portfolioflorine" />  
+                        
                         
                 </div>
                 </div>

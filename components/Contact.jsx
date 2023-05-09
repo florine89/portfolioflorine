@@ -40,7 +40,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center py-16 mt-20'>
+                <div className='flex justify-center py-16 mt-12'>
                     <Link href=''>
                         <div className='rounded-full shadow-xl cursor-pointer hover:scale-110 ease-in duration-300'>
                             <BsChevronDoubleUp className='text-5xl text-gray-400' />
