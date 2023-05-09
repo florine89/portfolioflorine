@@ -29,7 +29,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={html} alt="/" className='w-16' />
+                                <Image src={html} alt="html" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>HTML</h3>
@@ -39,7 +39,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={css} alt="/" className='w-16' />
+                                <Image src={css} alt="css" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>CSS</h3>
@@ -49,7 +49,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={javascript} alt="/" className='w-16' />
+                                <Image src={javascript} alt="javascript" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>JAVASCRIPT</h3>
@@ -59,7 +59,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={react} alt="/" className='w-16' />
+                                <Image src={react} alt="react" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>REACTJS</h3>
@@ -69,7 +69,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={nextjs} alt="/" className='w-16' />
+                                <Image src={nextjs} alt="nextjs" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>NEXTJS</h3>
@@ -79,7 +79,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={typescript} alt="/" className='w-16' />
+                                <Image src={typescript} alt="typescript" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>TYPESCRIPT</h3>
@@ -89,7 +89,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={nodejs} alt="/" className='w-16' />
+                                <Image src={nodejs} alt="nodejs" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>NODEJS</h3>
@@ -99,7 +99,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={postgresql} alt="/" className='w-16' />
+                                <Image src={postgresql} alt="postgresql" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>POSTGRESQL</h3>
@@ -109,7 +109,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={bootstrap} alt="/" className='w-16' />
+                                <Image src={bootstrap} alt="bootstrap" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>BOOTSTRAP</h3>
@@ -119,7 +119,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={tailwind} alt="/" className='w-16' />
+                                <Image src={tailwind} alt="tailwind" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>TAILWIND</h3>
@@ -129,7 +129,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={sass} alt="/" className='w-16' />
+                                <Image src={sass} alt="sass" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>SASS</h3>
@@ -143,7 +143,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={git} alt="/" className='w-16' />
+                                <Image src={git} alt="git" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>GIT</h3>
@@ -153,7 +153,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={github} alt="/" className='w-16' />
+                                <Image src={github} alt="github" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>GITHUB</h3>
@@ -163,7 +163,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={Vscode} alt="/" className='w-16' />
+                                <Image src={Vscode} alt="vscode" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>Visual Studio Code</h3>
@@ -173,7 +173,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={slack} alt="/" className='w-16' />
+                                <Image src={slack} alt="slack" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>SLACK</h3>
@@ -183,7 +183,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap_4 justify-center items-center'>
                             <div className='m-auto'>
-                                <Image src={discord} alt="/" className='w-16' />
+                                <Image src={discord} alt="discord" className='w-16' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>DISCORD</h3>

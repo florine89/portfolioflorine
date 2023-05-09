@@ -15,7 +15,7 @@ const Contact = () => {
                     <div className='col-span-3 lg:col-span2-w-full h-full shadow-xl rounded-xl p-4'>
                         <div className='lg:p-3 h-full'>
                             <div>
-                                <Image className='rounded-xl hover:scale-95 ease-in duration-300' src={contact} alt='/' />
+                                <Image className='rounded-xl hover:scale-95 ease-in duration-300' src={contact} alt='contact' />
                             </div>
 
                             <h2 className='py-2 sm: text-s lg: text-2xl'>Florine Ferreira</h2>
@@ -27,13 +27,13 @@ const Contact = () => {
 
                                 <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 '>
                                     <a href='https://github.com/florine89'>
-                                    <BsGithub className='cursor-pointer hover:scale-110 ease-in duration-300' />
+                                        <BsGithub className='cursor-pointer hover:scale-110 ease-in duration-300' />
                                     </a>
                                     <a href='https://www.linkedin.com/in/florineferreira' >
-                                    <BsLinkedin className='cursor-pointer hover:scale-110 ease-in duration-300' />
+                                        <BsLinkedin className='cursor-pointer hover:scale-110 ease-in duration-300' />
                                     </a>
                                     <a href='mailto:ferreiraflorine@gmail.com?Envoyer un mail' >
-                                    <BsFillEnvelopeAtFill className='cursor-pointer hover:scale-110 ease-in duration-300' />
+                                        <BsFillEnvelopeAtFill className='cursor-pointer hover:scale-110 ease-in duration-300' />
                                     </a>
                                 </div>
                             </div>
@@ -42,9 +42,9 @@ const Contact = () => {
                 </div>
                 <div className='flex justify-center py-16 mt-20'>
                     <Link href=''>
-                    <div className='rounded-full shadow-xl cursor-pointer hover:scale-110 ease-in duration-300'>
-<BsChevronDoubleUp className='text-5xl text-gray-400' />
-                    </div>
+                        <div className='rounded-full shadow-xl cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <BsChevronDoubleUp className='text-5xl text-gray-400' />
+                        </div>
                     </Link>
                 </div>
             </div>

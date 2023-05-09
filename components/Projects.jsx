@@ -36,7 +36,7 @@ const Projects = () => {
                   <ProjectItem title='Child Calculate'
                   backgroundImg={calculatechild}
                   technologies="Jquery"
-                  description="play with a calculate. On the menu, find most french popular website for kids."
+                  description="Calculate for kids to play around. On the menu, find educational french popular websites for kids."
                   projectUrl="https://kidsplaycalculate.netlify.app/" 
                   github="https://github.com/florine89/child-calculate" />  
                         
