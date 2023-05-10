@@ -49,7 +49,7 @@ const Projects = () => {
                      <ProjectItem title='My portfolio'
                   backgroundImg={portfolio}
                   technologies="Nextjs, TailwindCSS"
-                  description="My actually Portfolio that you are watching right now."
+                  description="My actually Portfolio that you are watching."
                   github="https://github.com/florine89/portfolioflorine" />  
                         
                         
