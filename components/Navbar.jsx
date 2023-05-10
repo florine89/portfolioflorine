@@ -3,10 +3,31 @@ import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { BsFillCloudMoonFill, BsLinkedin, BsGithub, BsFillEnvelopeAtFill } from 'react-icons/bs';
 import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme, GlobalStyles } from "../pages/ThemeConfig";
+import { createGlobalStyle} from "styled-components";
 
 
 const Navbar = () => {
+
+    const lightTheme = {
+        body: '#FFF',
+        text: '#363537',
+        toggleBorder: '#FFF',
+        background: '#363537',
+      }
+      const darkTheme = {
+        body: '#363537',
+        text: '#C8cecf',
+        toggleBorder: '#6B8096',
+        background: '#999',
+      }
+      const GlobalStyles = createGlobalStyle`
+        body {
+          background: ${({ theme }) => theme.body};
+          color: ${({ theme }) => theme.text};
+          font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
+          transition: all 0.50s linear;
+        }
+      `
 
     const [nav, setNav] = useState(false);
     const [Shadow, SetShadow] = useState(false);
