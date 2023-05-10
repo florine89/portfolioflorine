@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { BsFillCloudMoonFill, BsLinkedin, BsGithub, BsFillEnvelopeAtFill } from 'react-icons/bs';
 import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme, GlobalStyles } from "../src/pages/ThemeConfig";
+import { lightTheme, darkTheme, GlobalStyles } from "../pages/ThemeConfig";
 
 
 const Navbar = () => {
