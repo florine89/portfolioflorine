@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { BsFillCloudMoonFill, BsLinkedin, BsGithub, BsFillEnvelopeAtFill } from 'react-icons/bs';
 import { ThemeProvider } from 'styled-components';
-import { createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 
 const Navbar = () => {
@@ -13,14 +13,14 @@ const Navbar = () => {
         text: '#363537',
         toggleBorder: '#FFF',
         background: '#363537',
-      }
-      const darkTheme = {
+    }
+    const darkTheme = {
         body: '#363537',
         text: '#C8cecf',
         toggleBorder: '#6B8096',
         background: '#999',
-      }
-      const GlobalStyles = createGlobalStyle`
+    }
+    const GlobalStyles = createGlobalStyle`
         body {
           background: ${({ theme }) => theme.body};
           color: ${({ theme }) => theme.text};
@@ -107,7 +107,7 @@ const Navbar = () => {
                             />
                         </li>
                         <li className='hover:scale-125 ease-in duration-300 mr-10'>
-                            <a href="/assets/flo-resume.pdf"
+                            <a href="/assets/CV-florine.pdf"
                                 target='_blank'
                                 className='bg-gradient-to-r from-pink-200 to-pink-800 text-white px-4 py-2 rounded-lg ml-8 scale-50 '>Resume</a></li>
                     </ul>
@@ -158,18 +158,22 @@ const Navbar = () => {
                         <div className='pt-20 '>
 
                             <p className='uppercase tracking-widest text-pink-700'>Let's connect</p>
+                            <Link href='https://www.linkedin.com/in/florineferreira'>
+                                <div className='flex justify-center m-5 rounded-full shadow-lg cursor-pointer'>
+                                    <BsLinkedin size={20} />
+                                </div>
+                            </Link>
 
-                            <div className='flex justify-center m-5 rounded-full shadow-lg cursor-pointer'>
-                                <BsLinkedin size={20} />
-                            </div>
-
-                            <div className='flex justify-center m-5 rounded-full shadow-lg cursor-pointer'>
-                                <BsGithub size={20} />
-                            </div>
-
-                            <div className='flex justify-center m-5 rounded-full shadow-lg cursor-pointer'>
-                                <BsFillEnvelopeAtFill size={20} />
-                            </div>
+                            <Link href='https://github.com/florine89'>
+                                <div className='flex justify-center m-5 rounded-full shadow-lg cursor-pointer'>
+                                    <BsGithub size={20} />
+                                </div>
+                            </Link>
+                            <Link href='mailto:ferreiraflorine@gmail.com?Envoyer un mail'>
+                                <div className='flex justify-center m-5 rounded-full shadow-lg cursor-pointer'>
+                                    <BsFillEnvelopeAtFill size={20} />
+                                </div>
+                            </Link>
 
                         </div>
                     </div>

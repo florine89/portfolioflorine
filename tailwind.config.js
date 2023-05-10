@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
     fontFamily: {
-      burtons: "burtons",
+      abc: ['Lexend Deca', "sans-serif"]
     }
     },
   },
