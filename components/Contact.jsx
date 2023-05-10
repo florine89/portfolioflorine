@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Contact = () => {
     return (
-        <div id="contact" className='w-full pt-14 lg:h-screen flex'>
+        <div id="contact" className='font-abc w-full pt-14 lg:h-screen flex'>
             <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
                 <p className='text-xl tracking-widest uppercase text-pink-700'>Contact</p>
                 <h2 className='py-4'>Get In Touch</h2>

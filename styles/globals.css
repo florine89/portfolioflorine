@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Cormorant+Garamond&family=Lexend+Deca:wght@300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer base {
   html {
@@ -9,6 +11,7 @@
 
   body {
     @apply bg-[#ecf0f3] tracking-wide
+    
   }
 
   h1, h2, h3, h4, h5, h6 {

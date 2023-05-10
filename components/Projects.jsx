@@ -12,7 +12,7 @@ import converter from '../public/assets/projects/converterpic.png';
 const Projects = () => {
     return (
         <div id='projects' className='w-full pt-16'>
-            <div className='max-w-[1240px] mx-auto px-2 py-16'>
+            <div className='font-abc max-w-[1240px] mx-auto px-2 py-16'>
                 <p className=' text-xl tracking-widest uppercase text-pink-700'>Projects</p>
                 <h2 className='py-4'>What I've Built</h2>
                 <div className='grid md:grid-cols-2 gap-8'>
@@ -49,7 +49,7 @@ const Projects = () => {
                      <ProjectItem title='My portfolio'
                   backgroundImg={portfolio}
                   technologies="Nextjs, TailwindCSS"
-                  description="Mon portfolio sur lequel vous naviguez actuellement !"
+                  description="My actually Portfolio that you are watching right now."
                   github="https://github.com/florine89/portfolioflorine" />  
                         
                         
