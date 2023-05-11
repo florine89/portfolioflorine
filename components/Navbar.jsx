@@ -8,18 +8,22 @@ import { createGlobalStyle } from "styled-components";
 
 const Navbar = () => {
 
+    //definition couleur light theme
     const lightTheme = {
         body: '#FFF',
         text: '#363537',
         toggleBorder: '#FFF',
         background: '#363537',
     }
+
+    //definition couleur dark theme
     const darkTheme = {
         body: '#363537',
         text: '#C8cecf',
         toggleBorder: '#6B8096',
         background: '#999',
     }
+    //je créée mon body selon les themes que je vais appeler
     const GlobalStyles = createGlobalStyle`
         body {
           background: ${({ theme }) => theme.body};
@@ -28,20 +32,22 @@ const Navbar = () => {
           transition: all 0.50s linear;
         }
       `
-
+    //mes usestate pour gerer la barre de nav
     const [nav, setNav] = useState(false);
+    //usestae pour gerer mon scroll e le shadow de ma nav barre
     const [Shadow, SetShadow] = useState(false);
+    //couleur de ma nav barre (!transparent)
     const [navBg, setNavBg] = useState('#ecf0f3');
+    //usestae pour la la couleur de mes hover des links
     const [linkColor, setLinkColor] = useState('#1f2937');
-
     //const changement de theme
     const [theme, setTheme] = useState("light")
-    //fonction toggletheme pour allé dans mon bon composant
+    //fonction toggletheme que je vais appeler dans mon composant
     const toggleTheme = () => {
         theme == 'light' ? setTheme('dark') : setTheme('light')
     }
 
-
+     // je gère ma nav barre en version mobile
     const handleNav = () => {
         setNav(!nav)
         console.log(setNav)
@@ -112,6 +118,7 @@ const Navbar = () => {
                                 className='bg-gradient-to-r from-pink-200 to-pink-800 text-white px-4 py-2 rounded-lg ml-8 scale-50 '>Resume</a></li>
                     </ul>
                 </nav>
+                
                 {/* Création de ma navbar under 750px avec mon menu burger */}
                 <div
                     className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
