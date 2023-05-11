@@ -30,7 +30,7 @@ const Projects = () => {
                   github="https://github.com/florine89/plateforme-games" /> 
                   <ProjectItem title='Github search engine'
                   backgroundImg={github}
-                  technologies="Reactjs, Nodejs, express, PostgreSQL, Axios, Semantic-UI."
+                  technologies="Reactjs, Axios, Semantic-UI."
                   description="Look for anything you want on github search engine !"
                   projectUrl="https://github-moteur-de-recherche.netlify.app/" 
                   github="https://github.com/florine89/Moteur-recherche-github" /> 
