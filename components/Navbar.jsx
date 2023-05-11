@@ -112,10 +112,11 @@ const Navbar = () => {
                                 className='cursor-pointer text-3xl'
                             />
                         </li>
-                        <li className='hover:scale-125 ease-in duration-300 mr-10'>
+                        <li className='hover:scale-125 ease-in duration-300 mr-1'>
                             <a href="/assets/CV-florine.pdf"
                                 target='_blank'
-                                className='bg-gradient-to-r from-pink-200 to-pink-800 text-white px-4 py-2 rounded-lg ml-8 scale-50 '>Resume</a></li>
+                                className='bg-gradient-to-r from-pink-200 to-pink-800 text-white px-4 py-2 rounded-lg ml-8 scale-50 '>Resume</a>
+                                </li>
                     </ul>
                 </nav>
                 
