@@ -26,7 +26,7 @@ const Main = () => {
 
             </div>
             <div className='flex justify-center mt-20'>
-                <Image className='w-52 rounded-full brightness-90' src={me} alt='me' />
+                <Image className='w-48 rounded-full brightness-90' src={me} alt='me' />
             </div>
         </div>
     )
