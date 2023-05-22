@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 import { BsLinkedin, BsGithub, BsFillEnvelopeAtFill } from 'react-icons/bs';
-import me from "../public/assets/me.jpg";
+import flo from "../public/assets/me.jpg";
 
 const Main = () => {
     return (
@@ -26,7 +26,7 @@ const Main = () => {
 
             </div>
             <div className='flex justify-center mt-20'>
-                <Image className='w-48 rounded-full brightness-90' src={me} alt='me' />
+                <Image className='w-48 rounded-full brightness-90' src={flo} alt='me' />
             </div>
         </div>
     )
