@@ -23,8 +23,8 @@ const Projects = () => {
                 <ProjectItem title='FitWork'
                   backgroundImg={fitwork}
                   technologies="Reactjs, React-Bootstrap, Nodejs, PostgreSQL."
-                  description="A well-being application build to improve health at work. It gives exercices, advices
-                  and permit to follow a worker during his day at work."
+                  description="A well-being application built to improve health at work. It gives exercices, advices
+                  and the user can create a program."
                   projectUrl="https://fitwork-app.netlify.app/" 
                   github="https://github.com/florine89/fitwork-front" />   
                   <ProjectItem title='Github search engine'
